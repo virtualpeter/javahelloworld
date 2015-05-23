@@ -1,7 +1,6 @@
 FROM java:7
 
-#COPY src /home/root/helloworldjava/src
-ADD src /home/root/helloworldjava/src
+COPY src /home/root/helloworldjava/src
 WORKDIR /home/root/helloworldjava
 RUN mkdir bin
 RUN javac -d bin src/HelloWorld.java
