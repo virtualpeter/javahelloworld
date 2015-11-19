@@ -1,11 +1,9 @@
 FROM java:7
-
-COPY src /home/root/helloworldjava/src
-WORKDIR /home/root/helloworldjava
-RUN mkdir bin
+MAINTAINER Peter Viertel
+WORKDIR /home/root/javahelloworld
+RUN mkdir bin src
+COPY src src
 RUN javac -d bin src/HelloWorld.java
-RUN apt-get update
-
+RUN touch /NEWFILE
 ENTRYPOINT ["java", "-cp", "bin", "HelloWorld"]
-
-
+ENV FOO bar
