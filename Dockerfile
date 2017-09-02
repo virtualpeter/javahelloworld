@@ -1,4 +1,4 @@
-FROM java:7
+FROM openjdk:8-jre-apline
 MAINTAINER Peter Viertel
 WORKDIR /home/root/javahelloworld
 RUN mkdir bin src
