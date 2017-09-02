@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-apline
+FROM openjdk:8-jre-alpine
 MAINTAINER Peter Viertel
 WORKDIR /home/root/javahelloworld
 RUN mkdir bin src
